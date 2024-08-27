@@ -19,9 +19,9 @@ def copy_or_move_file(file_name):
         # Or move the file (uncomment if you want to move instead of copy)
         # shutil.move(src_path, dest_path)
         
-        return f"Successfully copied/moved {file_name}"
+        return f"[green1]Successfully copied/moved {file_name}"
     except Exception as e:
-        return f"Error processing {file_name}: {e}"
+        return f"[red]Error processing {file_name}: {e}"
 
 # Ensure output folder exists
 for i in range (len(folder1)):
