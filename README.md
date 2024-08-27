@@ -32,8 +32,12 @@ If there are **errors** in the renaming process (the books don't have the corect
 ## Warning sometimes it creates empty files 
 The empty files are deleted by step 4.
 
-
-
+### If i update the code 
+Run ```bat 
+cd D:/11/---Code
+git pull
+``` 
+and it will download and update th files I changed.
 
 <details>
 <summary>FootNote</summary>
