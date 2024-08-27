@@ -19,9 +19,9 @@ def copy_or_move_file(file_name):
         # Or move the file (uncomment if you want to move instead of copy)
         # shutil.move(src_path, dest_path)
         
-        return f"[green1]Successfully copied/moved {file_name}"
+        return f"[green1]Successfully copied/moved {file_name}\n"
     except Exception as e:
-        return f"[red]Error processing {file_name}: {e}"
+        return f"[red]Error processing {file_name}: {e}\n"
 
 # Ensure output folder exists
 for i in range (len(folder1)):
@@ -36,15 +36,15 @@ for i in range (len(folder1)):
     
     # Find files that are in folder2 but not in folder1
     unique_files_in_folder2 = files_in_folder2 - files_in_folder1
-    print(unique_files_in_folder2)
+    # print(unique_files_in_folder2)
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
     # Submit tasks to the executor
         futures = [executor.submit(copy_or_move_file, file_name) for file_name in unique_files_in_folder2]
 
         # Wait for all tasks to complete and print results
         for future in concurrent.futures.as_completed(futures):
-            print(future.result())
+            _ = future.result()
 
 # Use ThreadPoolExecutor for parallel processing
 
-print(f"Processed {len(unique_files_in_folder2)} unique files.")
+print(f"\n[blue]Processed {len(unique_files_in_folder2)} unique files.")
