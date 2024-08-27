@@ -36,9 +36,12 @@ The empty files are deleted by step 4.
 
 
 <details>
-<summary>###### FootNote</summary>
+<summary>FootNote</summary>
+
 - The code is not perfect and there might be some bugs. 
 - If you find any bugs please contact me.
 - I am not responsible for the damage of your books.
+
 </details>
+
 # I had fun making this.
