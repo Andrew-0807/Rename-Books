@@ -1,7 +1,7 @@
 import os
 import shutil
 import math
-
+os.chdir("D://11//")
 def split_files(target_folder, max_files_per_folder):
     # Get a list of all files in the target folder
     files = [f for f in os.listdir(target_folder) if os.path.isfile(os.path.join(target_folder, f))]

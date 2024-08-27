@@ -20,8 +20,8 @@ class FileProcessor( ):
         base_url='http://localhost:11434/v1',
         api_key='ollama',  
     )
+        os.chdir("D:/11/")
         self.initDirectory()
-        
         self.count = 0
         self.count_good = 0
         self.count_errors = 0
@@ -35,7 +35,6 @@ class FileProcessor( ):
     def initDirectory(self):
         os.makedirs(DESTINATION_FOLDER, exist_ok=True) 
         os.makedirs(ERRORS_FOLDER, exist_ok=True)
-        os.makedirs("./Books", exist_ok=True)
 
     def mark_processed_file(self, file):
         
@@ -120,7 +119,7 @@ class FileProcessor( ):
 
     def manage_file(self, file_name):
 
-        new_filename = self.standardize_document_name("".join(file_name.split(".")[:-1]).replace("biblioteca noastra",""))
+        new_filename = self.standardize_document_name("".join(os.path.basename(file_name).split(".")[:-1]).replace("biblioteca noastra",""))
         new_filename = self.replace_special_chars(new_filename)
         
         if " - " not in new_filename:
@@ -153,9 +152,6 @@ class FileProcessor( ):
 
         except Exception as e:
             print(f"[red1] Error copying and renaming file: {str(e)}")
-            try:
-                shutil.copy2(original_file, "./Books")
-            except:
-                pass
+
             return False
         

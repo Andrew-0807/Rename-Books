@@ -1,7 +1,9 @@
 import os 
 import shutil 
 from rich import print
+import subprocess
 
+os.chdir("d://11//")
 count = 0
 countgood = 0
 countbad = 0
@@ -11,7 +13,7 @@ def makedir(dir):
     except FileExistsError: # catch specific exception instead of all exceptions
         pass
 
-for f in ["Errors", "Books", "Done", "Completed", "Processed"]:
+for f in ["Errors", "Done", "Completed", "Processed"]:
     makedir(f)
     
 # for file in os.listdir("./Books"):
@@ -41,7 +43,6 @@ def RemoveDone(name, file):
                 os.remove(full_file_path)
                 print(f"{file} is an empty file")
 
-            shutil.move(full_file_path,"./Errors")
 
             
         except:
@@ -70,10 +71,10 @@ for file in os.listdir("./Completed"):
         RemoveDone("./Completed", file)
     else:
         try:
-            shutil.move("./Completed/" + file , "./Books")
+            shutil.move("./Completed/" + file , "./carti")
 
 
         except Exception as e:
             print(e)
-
+subprocess.run(["python", " D:/11/---Code/Split Batches.py"], capture_output=False)
 print(f"[blue]From {count} file [/blue]there were [green] {countgood} done right[/green] and [red]{countbad} errors [/red]")

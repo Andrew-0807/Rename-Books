@@ -1,18 +1,16 @@
 import os
 from rich import print
 import concurrent.futures
-import cProfile
-from pstats import Stats
+import time
 from Processor import FileProcessor
-
-
+from DelDupFiles import DelDuplicateFiles
+start_time = time.time()
 # Constants
 ORIGIN_FOLDER = "./carti"
 # ORIGIN_FOLDER = "./Carti dezvlotare personala"
+os.chdir("D:/11/")
 
 
-profiler = cProfile.Profile()
-profiler.enable()
 
 def manage_file_process(file, processor):
     return processor.manage_file(file)
@@ -43,7 +41,7 @@ if ORIGIN_FOLDER == './carti':
         subMain(processor,designed_folder)
 else:
     processor.initDesignedFolder(ORIGIN_FOLDER)
-    subMain(processor)
+    subMain(processor, ORIGIN_FOLDER)
 
 print(
  f"[blue]{processor.count} total there were [/blue]"+
@@ -52,6 +50,8 @@ print(
 + f"\nThere are {processor.count_empty} Empty files "
 )
 
-profiler.disable()
-stats = Stats(profiler).sort_stats('time')
-stats.print_stats()
+end_time = time.time()
+total_time = end_time - start_time
+DelDuplicateFiles()
+
+print(f"Total time: {total_time:.4f} seconds")

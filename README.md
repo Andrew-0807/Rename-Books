@@ -10,10 +10,24 @@ Installation of ollama the model needed is gemma2:2b
 ollama pull gemma2:2b
 ```
 # Usage
-Make a folder carti place all the books there
-Run split batches 
-Run rename books 
-Run remove errors 
-after finishing these remove the books from carti and replace them with the once in the folder books from which the errors were filtred 
-## Warning sometimes it creates empty files
-#### Note that it will copy failed to rename files to the Books Folder
+
+1. Make a folder carti place all the books there
+```bat
+mkdir D:/11/carti
+```
+2. Run split batches 
+```bat
+ python D:\11\---Code\Split Batches.py
+```
+3. Run rename books until the count is 0 and duplicates deleted are 0
+```bat
+python D:\11\---Code\RenameBooks.py
+```
+4. Run remove errors 
+```bat
+python D:\11\---Code\RemoveErrors.py
+```
+### **Note**
+If there are **errors** in the renaming process (the books don't have the corect name format) those books will be rerouted to the carti folder and split within the existing folders again please go back to step 3.
+## Warning sometimes it creates empty files 
+The empty files are deleted by step 4.
