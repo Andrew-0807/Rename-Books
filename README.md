@@ -1,52 +1,73 @@
-# Project Of Renaming Books
-### Made for Marius 
-#### in the course of 2 weeks 
-# Instalation 
-## Requerments 
-- python
-- ollama
-Installation of ollama the model needed is gemma2:2b
-```bat
+# 📚 Rename-Books
+Automated scripts for bulk-renaming eBooks, built for easy folder management and error handling.
+Developed for Marius over two weeks – powered by Python and Ollama's Gemma2:2B model.
+
+# 🚀 Features
+- Batch rename books: Easily rename eBooks in bulk from one central folder.
+
+- Error correction: Automatically reroutes books with incorrect naming formats for review.
+
+- Duplicate removal: Clears duplicates to keep your collection tidy.
+
+- Empty file clean-up: Detects and removes empty files from folders.
+
+- Simple update workflow: Pull the latest code updates using Git.
+
+- No-frills command-line usage: Just a few Python commands to run the tool.
+
+# 🛠 Requirements
+Python
+
+Ollama with the model gemma2:2b
+### To install:
+
+```bash
 ollama pull gemma2:2b
 ```
-# Usage
+#📦 Installation
+## Create the target books folder:
 
-1. Make a folder carti place all the books there
-```bat
+```bash
 mkdir D:/11/carti
 ```
-2. Run split batches 
-```bat
- python D:\11\---Code\Split Batches.py
-```
-3. Run rename books until the count is 0 and duplicates deleted are 0
-```bat
-python D:\11\---Code\RenameBooks.py
-```
-4. Run remove errors 
-```bat
-python D:\11\---Code\RemoveErrors.py
-```
-### **Note**
-If there are **errors** in the renaming process (the books don't have the corect name format) those books will be rerouted to the carti folder and split within the existing folders again please go back to step 3.
-## Warning sometimes it creates empty files 
-The empty files are deleted by step 4.
+#### Download and set up the code in D:/11/---Code.
 
-### If i update the code 
-Run 
-```bat 
+##⚙️ Usage
+####Split batches:
+```bash
+python D:/11/---Code/Split Batches.py
+```
+#### Rename books (repeat until count is 0 and no duplicates remain):
+```bash
+python D:/11/---Code/RenameBooks.py
+```
+#### Remove errors:
+
+```bash
+python D:/11/---Code/RemoveErrors.py
+```
+### ✨ Note
+If any books are incorrectly renamed, they will be moved back to the carti folder for retrying steps 2–3.
+
+### ⚠️ Warnings
+Sometimes empty files may be generated; step 3 will remove them.
+
+If you update the code, run:
+
+```bash
 cd D:/11/---Code
 git pull
-``` 
-and it will download and update th files I changed.
+```
+The code isn’t perfect; you may encounter bugs.
 
-<details>
-<summary>FootNote</summary>
+### 💬 Contact
+For bug reports or questions, please open an issue on GitHub.
 
-- The code is not perfect and there might be some bugs. 
-- If you find any bugs please contact me.
-- I am not responsible for the damage of your books.
+### 📄 License
+See the LICENSE file for details.
 
-</details>
+### 🏷️ About
+No website or project topics yet.
 
-# I had fun making this.
+
+Use at your own risk – the author is not responsible for any damage or lost books!
