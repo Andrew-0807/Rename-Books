@@ -1,19 +1,44 @@
-Carti diverse
-Carti
-Books
-Completed
-Done
-Done 79 000
-Processed
-Errors
-Errorextension
+# Runtime output — never commit these
+norma-output/
+*.log
+
+# Benchmark corpus and output — large dummy files, not part of source
+benchmark/files/
+benchmark/output*/
+benchmark/validation*/
+benchmark/test-*/
+benchmark/results.tsv
+
+# Claude internal
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Old data folders (local only)
+carti/
+Carti/
+Carti diverse/
+Carti dezvlotare personala/
+Books/
+Completed/
+Done/
+Done 79 000/
+Done 64k/
+Processed/
+Errors/
+Errorextension/
+Manual/
+files from booklovers/
+carti 100 000/
+Completed carti 6/
+Books carti 6/
+
+# Misc
 Delete Download and Chrome info.bat
-carti 100 000
-Completed carti 6
-Books carti 6
-files from booklovers
-Manual
-Done 64k
-Carti dezvlotare personala
-__pycache__
-processed_files.log

@@ -1,0 +1,186 @@
+<svg class="rich-terminal" viewBox="0 0 1116 806.4" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-3473450106-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-3473450106-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-3473450106-r1 { fill: #c5c8c6 }
+.terminal-3473450106-r2 { fill: #c5c8c6;font-weight: bold }
+.terminal-3473450106-r3 { fill: #868887 }
+.terminal-3473450106-r4 { fill: #6b546f }
+.terminal-3473450106-r5 { fill: #a92a59 }
+.terminal-3473450106-r6 { fill: #d0b344 }
+.terminal-3473450106-r7 { fill: #c5c8c6;font-style: italic; }
+.terminal-3473450106-r8 { fill: #98a84b }
+.terminal-3473450106-r9 { fill: #868887;font-weight: bold }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-3473450106-clip-terminal">
+      <rect x="0" y="0" width="1097.0" height="755.4" />
+    </clipPath>
+    <clipPath id="terminal-3473450106-line-0">
+    <rect x="0" y="1.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-1">
+    <rect x="0" y="25.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-2">
+    <rect x="0" y="50.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-3">
+    <rect x="0" y="74.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-4">
+    <rect x="0" y="99.1" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-5">
+    <rect x="0" y="123.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-6">
+    <rect x="0" y="147.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-7">
+    <rect x="0" y="172.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-8">
+    <rect x="0" y="196.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-9">
+    <rect x="0" y="221.1" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-10">
+    <rect x="0" y="245.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-11">
+    <rect x="0" y="269.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-12">
+    <rect x="0" y="294.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-13">
+    <rect x="0" y="318.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-14">
+    <rect x="0" y="343.1" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-15">
+    <rect x="0" y="367.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-16">
+    <rect x="0" y="391.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-17">
+    <rect x="0" y="416.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-18">
+    <rect x="0" y="440.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-19">
+    <rect x="0" y="465.1" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-20">
+    <rect x="0" y="489.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-21">
+    <rect x="0" y="513.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-22">
+    <rect x="0" y="538.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-23">
+    <rect x="0" y="562.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-24">
+    <rect x="0" y="587.1" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-25">
+    <rect x="0" y="611.5" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-26">
+    <rect x="0" y="635.9" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-27">
+    <rect x="0" y="660.3" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-28">
+    <rect x="0" y="684.7" width="1098" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-3473450106-line-29">
+    <rect x="0" y="709.1" width="1098" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1114" height="804.4" rx="8"/><text class="terminal-3473450106-title" fill="#c5c8c6" text-anchor="middle" x="557" y="27">screenshot-dryrun</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-3473450106-clip-terminal)">
+    <rect fill="#608ab1" x="0" y="25.9" width="85.4" height="24.65" shape-rendering="crispEdges"/>
+    <g class="terminal-3473450106-matrix">
+    <text class="terminal-3473450106-r1" x="1098" y="20" textLength="12.2" clip-path="url(#terminal-3473450106-line-0)">
+</text><text class="terminal-3473450106-r2" x="0" y="44.4" textLength="85.4" clip-path="url(#terminal-3473450106-line-1)">&#160;norma&#160;</text><text class="terminal-3473450106-r3" x="109.8" y="44.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-1)">~</text><text class="terminal-3473450106-r4" x="122" y="44.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-1)">/</text><text class="terminal-3473450106-r5" x="134.2" y="44.4" textLength="73.2" clip-path="url(#terminal-3473450106-line-1)">ebooks</text><text class="terminal-3473450106-r3" x="219.6" y="44.4" textLength="24.4" clip-path="url(#terminal-3473450106-line-1)">-&gt;</text><text class="terminal-3473450106-r3" x="256.2" y="44.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-1)">~</text><text class="terminal-3473450106-r4" x="268.4" y="44.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-1)">/</text><text class="terminal-3473450106-r5" x="280.6" y="44.4" textLength="146.4" clip-path="url(#terminal-3473450106-line-1)">norma-output</text><text class="terminal-3473450106-r6" x="451.4" y="44.4" textLength="390.4" clip-path="url(#terminal-3473450106-line-1)">DRY&#160;RUN&#160;—&#160;no&#160;files&#160;will&#160;be&#160;moved</text><text class="terminal-3473450106-r1" x="1098" y="44.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-1)">
+</text><text class="terminal-3473450106-r1" x="1098" y="68.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-2)">
+</text><text class="terminal-3473450106-r1" x="0" y="93.2" textLength="85.4" clip-path="url(#terminal-3473450106-line-3)">Backend</text><text class="terminal-3473450106-r3" x="109.8" y="93.2" textLength="122" clip-path="url(#terminal-3473450106-line-3)">ollama&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="256.2" y="93.2" textLength="73.2" clip-path="url(#terminal-3473450106-line-3)">Format</text><text class="terminal-3473450106-r3" x="353.8" y="93.2" textLength="305" clip-path="url(#terminal-3473450106-line-3)">{Author}&#160;-&#160;{Title}&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1098" y="93.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-3)">
+</text><text class="terminal-3473450106-r1" x="0" y="117.6" textLength="85.4" clip-path="url(#terminal-3473450106-line-4)">Model&#160;&#160;</text><text class="terminal-3473450106-r3" x="109.8" y="117.6" textLength="122" clip-path="url(#terminal-3473450106-line-4)">qwen2.5:3b</text><text class="terminal-3473450106-r1" x="256.2" y="117.6" textLength="73.2" clip-path="url(#terminal-3473450106-line-4)">Batch&#160;</text><text class="terminal-3473450106-r3" x="353.8" y="117.6" textLength="305" clip-path="url(#terminal-3473450106-line-4)">100&#160;files/call&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1098" y="117.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-4)">
+</text><text class="terminal-3473450106-r1" x="0" y="142" textLength="85.4" clip-path="url(#terminal-3473450106-line-5)">Workers</text><text class="terminal-3473450106-r3" x="109.8" y="142" textLength="122" clip-path="url(#terminal-3473450106-line-5)">16&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="256.2" y="142" textLength="73.2" clip-path="url(#terminal-3473450106-line-5)">API&#160;&#160;&#160;</text><text class="terminal-3473450106-r3" x="353.8" y="142" textLength="305" clip-path="url(#terminal-3473450106-line-5)">http://localhost:11434/v1</text><text class="terminal-3473450106-r1" x="1098" y="142" textLength="12.2" clip-path="url(#terminal-3473450106-line-5)">
+</text><text class="terminal-3473450106-r1" x="1098" y="166.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-6)">
+</text><text class="terminal-3473450106-r7" x="0" y="190.8" textLength="1049.2" clip-path="url(#terminal-3473450106-line-7)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dry&#160;run&#160;preview&#160;—&#160;12&#160;files&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1098" y="190.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-7)">
+</text><text class="terminal-3473450106-r1" x="0" y="215.2" textLength="1049.2" clip-path="url(#terminal-3473450106-line-8)">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</text><text class="terminal-3473450106-r1" x="1098" y="215.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-8)">
+</text><text class="terminal-3473450106-r1" x="0" y="239.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-9)">┃</text><text class="terminal-3473450106-r2" x="24.4" y="239.6" textLength="475.8" clip-path="url(#terminal-3473450106-line-9)">Original&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="239.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-9)">┃</text><text class="terminal-3473450106-r2" x="536.8" y="239.6" textLength="488" clip-path="url(#terminal-3473450106-line-9)">-&gt;&#160;New&#160;name&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="239.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-9)">┃</text><text class="terminal-3473450106-r1" x="1098" y="239.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-9)">
+</text><text class="terminal-3473450106-r1" x="0" y="264" textLength="1049.2" clip-path="url(#terminal-3473450106-line-10)">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</text><text class="terminal-3473450106-r1" x="1098" y="264" textLength="12.2" clip-path="url(#terminal-3473450106-line-10)">
+</text><text class="terminal-3473450106-r1" x="0" y="288.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-11)">│</text><text class="terminal-3473450106-r3" x="24.4" y="288.4" textLength="475.8" clip-path="url(#terminal-3473450106-line-11)">harry_potter_jk_rowling.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="288.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-11)">│</text><text class="terminal-3473450106-r8" x="536.8" y="288.4" textLength="488" clip-path="url(#terminal-3473450106-line-11)">J.K.&#160;Rowling&#160;-&#160;Harry&#160;Potter.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="288.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-11)">│</text><text class="terminal-3473450106-r1" x="1098" y="288.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-11)">
+</text><text class="terminal-3473450106-r1" x="0" y="312.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-12)">│</text><text class="terminal-3473450106-r3" x="24.4" y="312.8" textLength="475.8" clip-path="url(#terminal-3473450106-line-12)">4.LISA_KLEYPAS_Scandal_in_primavara.pdf</text><text class="terminal-3473450106-r1" x="512.4" y="312.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-12)">│</text><text class="terminal-3473450106-r8" x="536.8" y="312.8" textLength="488" clip-path="url(#terminal-3473450106-line-12)">Lisa&#160;Kleypas&#160;-&#160;Scandal&#160;in&#160;primavara.pdf&#160;</text><text class="terminal-3473450106-r1" x="1037" y="312.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-12)">│</text><text class="terminal-3473450106-r1" x="1098" y="312.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-12)">
+</text><text class="terminal-3473450106-r1" x="0" y="337.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-13)">│</text><text class="terminal-3473450106-r3" x="24.4" y="337.2" textLength="475.8" clip-path="url(#terminal-3473450106-line-13)">Haralamb_Zinca_Interpolul_transmite.ep…</text><text class="terminal-3473450106-r1" x="512.4" y="337.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-13)">│</text><text class="terminal-3473450106-r8" x="536.8" y="337.2" textLength="488" clip-path="url(#terminal-3473450106-line-13)">Haralamb&#160;Zinca&#160;-&#160;Interpolul&#160;transmite&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="337.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-13)">│</text><text class="terminal-3473450106-r1" x="1098" y="337.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-13)">
+</text><text class="terminal-3473450106-r1" x="0" y="361.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-14)">│</text><text class="terminal-3473450106-r1" x="512.4" y="361.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-14)">│</text><text class="terminal-3473450106-r8" x="536.8" y="361.6" textLength="488" clip-path="url(#terminal-3473450106-line-14)">arestati.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="361.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-14)">│</text><text class="terminal-3473450106-r1" x="1098" y="361.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-14)">
+</text><text class="terminal-3473450106-r1" x="0" y="386" textLength="12.2" clip-path="url(#terminal-3473450106-line-15)">│</text><text class="terminal-3473450106-r3" x="24.4" y="386" textLength="475.8" clip-path="url(#terminal-3473450106-line-15)">1984_george_orwell.mobi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="386" textLength="12.2" clip-path="url(#terminal-3473450106-line-15)">│</text><text class="terminal-3473450106-r8" x="536.8" y="386" textLength="488" clip-path="url(#terminal-3473450106-line-15)">George&#160;Orwell&#160;-&#160;1984.mobi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="386" textLength="12.2" clip-path="url(#terminal-3473450106-line-15)">│</text><text class="terminal-3473450106-r1" x="1098" y="386" textLength="12.2" clip-path="url(#terminal-3473450106-line-15)">
+</text><text class="terminal-3473450106-r1" x="0" y="410.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-16)">│</text><text class="terminal-3473450106-r3" x="24.4" y="410.4" textLength="475.8" clip-path="url(#terminal-3473450106-line-16)">tolkien_lord_of_the_rings_vol1.epub&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="410.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-16)">│</text><text class="terminal-3473450106-r8" x="536.8" y="410.4" textLength="488" clip-path="url(#terminal-3473450106-line-16)">J.R.R.&#160;Tolkien&#160;-&#160;The&#160;Lord&#160;of&#160;the&#160;Rings&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="410.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-16)">│</text><text class="terminal-3473450106-r1" x="1098" y="410.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-16)">
+</text><text class="terminal-3473450106-r1" x="0" y="434.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-17)">│</text><text class="terminal-3473450106-r1" x="512.4" y="434.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-17)">│</text><text class="terminal-3473450106-r8" x="536.8" y="434.8" textLength="488" clip-path="url(#terminal-3473450106-line-17)">Vol&#160;1.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="434.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-17)">│</text><text class="terminal-3473450106-r1" x="1098" y="434.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-17)">
+</text><text class="terminal-3473450106-r1" x="0" y="459.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-18)">│</text><text class="terminal-3473450106-r3" x="24.4" y="459.2" textLength="475.8" clip-path="url(#terminal-3473450106-line-18)">gabriel-garcia-marquez-solitudine.epub&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="459.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-18)">│</text><text class="terminal-3473450106-r8" x="536.8" y="459.2" textLength="488" clip-path="url(#terminal-3473450106-line-18)">Gabriel&#160;Garcia&#160;Marquez&#160;-&#160;One&#160;Hundred&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="459.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-18)">│</text><text class="terminal-3473450106-r1" x="1098" y="459.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-18)">
+</text><text class="terminal-3473450106-r1" x="0" y="483.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-19)">│</text><text class="terminal-3473450106-r1" x="512.4" y="483.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-19)">│</text><text class="terminal-3473450106-r8" x="536.8" y="483.6" textLength="488" clip-path="url(#terminal-3473450106-line-19)">Years&#160;of&#160;Solitude.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="483.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-19)">│</text><text class="terminal-3473450106-r1" x="1098" y="483.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-19)">
+</text><text class="terminal-3473450106-r1" x="0" y="508" textLength="12.2" clip-path="url(#terminal-3473450106-line-20)">│</text><text class="terminal-3473450106-r3" x="24.4" y="508" textLength="475.8" clip-path="url(#terminal-3473450106-line-20)">INV-2024-ACME-CORP-000432.pdf&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="508" textLength="12.2" clip-path="url(#terminal-3473450106-line-20)">│</text><text class="terminal-3473450106-r8" x="536.8" y="508" textLength="488" clip-path="url(#terminal-3473450106-line-20)">ACME&#160;Corp&#160;-&#160;Invoice&#160;2024-000432.pdf&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="508" textLength="12.2" clip-path="url(#terminal-3473450106-line-20)">│</text><text class="terminal-3473450106-r1" x="1098" y="508" textLength="12.2" clip-path="url(#terminal-3473450106-line-20)">
+</text><text class="terminal-3473450106-r1" x="0" y="532.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-21)">│</text><text class="terminal-3473450106-r3" x="24.4" y="532.4" textLength="475.8" clip-path="url(#terminal-3473450106-line-21)">smith2019_ml_paper_final_v2.pdf&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="532.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-21)">│</text><text class="terminal-3473450106-r8" x="536.8" y="532.4" textLength="488" clip-path="url(#terminal-3473450106-line-21)">Smith&#160;(2019)&#160;-&#160;ML&#160;Paper&#160;Final.pdf&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="532.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-21)">│</text><text class="terminal-3473450106-r1" x="1098" y="532.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-21)">
+</text><text class="terminal-3473450106-r1" x="0" y="556.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-22)">│</text><text class="terminal-3473450106-r3" x="24.4" y="556.8" textLength="475.8" clip-path="url(#terminal-3473450106-line-22)">Jean_de_la_Hire_Cei_Trei_Cercetasi_V23…</text><text class="terminal-3473450106-r1" x="512.4" y="556.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-22)">│</text><text class="terminal-3473450106-r8" x="536.8" y="556.8" textLength="488" clip-path="url(#terminal-3473450106-line-22)">Jean&#160;de&#160;la&#160;Hire&#160;-&#160;Cei&#160;Trei&#160;Cercetasi&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="556.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-22)">│</text><text class="terminal-3473450106-r1" x="1098" y="556.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-22)">
+</text><text class="terminal-3473450106-r1" x="0" y="581.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-23)">│</text><text class="terminal-3473450106-r1" x="512.4" y="581.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-23)">│</text><text class="terminal-3473450106-r8" x="536.8" y="581.2" textLength="488" clip-path="url(#terminal-3473450106-line-23)">V23.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="581.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-23)">│</text><text class="terminal-3473450106-r1" x="1098" y="581.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-23)">
+</text><text class="terminal-3473450106-r1" x="0" y="605.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-24)">│</text><text class="terminal-3473450106-r3" x="24.4" y="605.6" textLength="475.8" clip-path="url(#terminal-3473450106-line-24)">foundation_isaac_asimov.pdf&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="605.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-24)">│</text><text class="terminal-3473450106-r8" x="536.8" y="605.6" textLength="488" clip-path="url(#terminal-3473450106-line-24)">Isaac&#160;Asimov&#160;-&#160;Foundation.pdf&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="605.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-24)">│</text><text class="terminal-3473450106-r1" x="1098" y="605.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-24)">
+</text><text class="terminal-3473450106-r1" x="0" y="630" textLength="12.2" clip-path="url(#terminal-3473450106-line-25)">│</text><text class="terminal-3473450106-r3" x="24.4" y="630" textLength="475.8" clip-path="url(#terminal-3473450106-line-25)">brave_new_world_huxley.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="630" textLength="12.2" clip-path="url(#terminal-3473450106-line-25)">│</text><text class="terminal-3473450106-r8" x="536.8" y="630" textLength="488" clip-path="url(#terminal-3473450106-line-25)">Aldous&#160;Huxley&#160;-&#160;Brave&#160;New&#160;World.epub&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="630" textLength="12.2" clip-path="url(#terminal-3473450106-line-25)">│</text><text class="terminal-3473450106-r1" x="1098" y="630" textLength="12.2" clip-path="url(#terminal-3473450106-line-25)">
+</text><text class="terminal-3473450106-r1" x="0" y="654.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-26)">│</text><text class="terminal-3473450106-r3" x="24.4" y="654.4" textLength="475.8" clip-path="url(#terminal-3473450106-line-26)">1365135809.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="512.4" y="654.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-26)">│</text><text class="terminal-3473450106-r8" x="536.8" y="654.4" textLength="488" clip-path="url(#terminal-3473450106-line-26)">Unknown&#160;-&#160;1365135809.epub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-3473450106-r1" x="1037" y="654.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-26)">│</text><text class="terminal-3473450106-r1" x="1098" y="654.4" textLength="12.2" clip-path="url(#terminal-3473450106-line-26)">
+</text><text class="terminal-3473450106-r1" x="0" y="678.8" textLength="1049.2" clip-path="url(#terminal-3473450106-line-27)">└─────────────────────────────────────────┴──────────────────────────────────────────┘</text><text class="terminal-3473450106-r1" x="1098" y="678.8" textLength="12.2" clip-path="url(#terminal-3473450106-line-27)">
+</text><text class="terminal-3473450106-r1" x="1098" y="703.2" textLength="12.2" clip-path="url(#terminal-3473450106-line-28)">
+</text><text class="terminal-3473450106-r3" x="0" y="727.6" textLength="146.4" clip-path="url(#terminal-3473450106-line-29)">Run&#160;without&#160;</text><text class="terminal-3473450106-r9" x="146.4" y="727.6" textLength="109.8" clip-path="url(#terminal-3473450106-line-29)">--dry-run</text><text class="terminal-3473450106-r3" x="256.2" y="727.6" textLength="292.8" clip-path="url(#terminal-3473450106-line-29)">&#160;to&#160;apply&#160;these&#160;renames.</text><text class="terminal-3473450106-r1" x="1098" y="727.6" textLength="12.2" clip-path="url(#terminal-3473450106-line-29)">
+</text><text class="terminal-3473450106-r1" x="1098" y="752" textLength="12.2" clip-path="url(#terminal-3473450106-line-30)">
+</text>
+    </g>
+    </g>
+</svg>
