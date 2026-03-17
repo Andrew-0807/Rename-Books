@@ -16,6 +16,8 @@
 
 <img src="docs/screenshot-dryrun.svg" alt="norma dry-run preview" width="800"/>
 
+<p><a href="README.ro.md">🇷🇴 Română</a></p>
+
 </div>
 
 ---
