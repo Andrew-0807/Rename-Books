@@ -11,7 +11,7 @@
   <a href="https://www.python.org/downloads/"><img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white"/></a>
   <a href="https://ollama.com"><img alt="Ollama" src="https://img.shields.io/badge/backend-Ollama%20%7C%20LM%20Studio-black?style=flat-square"/></a>
   <img alt="Confidentialitate" src="https://img.shields.io/badge/confidentialitate-100%25%20local-green?style=flat-square"/>
-  <a href="LICENCE"><img alt="Licenta" src="https://img.shields.io/badge/licenta-MIT-orange?style=flat-square"/></a>
+  <a href="LICENCE"><img alt="Licenta" src="https://img.shields.io/badge/licenta-Unlicense-orange?style=flat-square"/></a>
 </p>
 
 <p><a href="README.md">🇬🇧 English</a></p>
