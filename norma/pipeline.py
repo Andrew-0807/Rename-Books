@@ -1,12 +1,14 @@
 import math
+import queue
 import shutil
 import logging
+import threading
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Callable
 
 from .config import Config
-from .processor import FileProcessor
+from .processor import FileProcessor, FileResult
 from .dedup import remove_duplicates
 
 logger = logging.getLogger("norma")
@@ -18,6 +20,7 @@ _SPLIT_THRESHOLD = 3000
 def run_pipeline(
     config: Config,
     progress_callback: Callable[[int, int], None] | None = None,
+    result_callback: Callable[[list[FileResult]], None] | None = None,
 ) -> dict:
     """
     Run the full rename pipeline.
@@ -31,6 +34,7 @@ def run_pipeline(
       6. Return stats dict
 
     progress_callback(completed, total) is called after each batch completes.
+    result_callback(batch_results) is called with per-file results after each batch.
     """
     config.output_folder.mkdir(parents=True, exist_ok=True)
 
@@ -52,30 +56,41 @@ def run_pipeline(
     # For dry-run, collect preview rows
     preview_rows: list[tuple[str, str]] = []
 
+    def wrapped_callback(results: list[FileResult]) -> None:
+        if result_callback:
+            result_callback(results)
+        if progress_callback:
+            nonlocal completed
+            completed += len(results)
+            progress_callback(completed, total)
+
     with ThreadPoolExecutor(max_workers=config.workers) as executor:
         futures = {
-            executor.submit(processor.process_and_apply_batch, batch): batch
+            executor.submit(
+                processor.process_and_apply_batch, batch, wrapped_callback
+            ): batch
             for batch in batches
         }
         for future in as_completed(futures):
             try:
                 batch_results = future.result()
-                completed += len(futures[future])
                 if config.dry_run:
-                    for original, new_name, _ in batch_results:
+                    for original, _, _, new_name in batch_results:
                         if new_name:
                             preview_rows.append((original.name, new_name))
-                if progress_callback:
-                    progress_callback(completed, total)
             except Exception as e:
                 logger.error(f"Batch processing error: {e}")
 
     # Step 4: dedup (skip in dry-run — nothing was copied)
     deduped = 0
     if not config.dry_run:
-        processed_mirror = config.output_folder.parent / "Processed" / config.input_folder.name
+        processed_mirror = (
+            config.output_folder.parent / "Processed" / config.input_folder.name
+        )
         if processed_mirror.exists():
-            deduped = remove_duplicates(config.input_folder, processed_mirror, config.workers)
+            deduped = remove_duplicates(
+                config.input_folder, processed_mirror, config.workers
+            )
 
     # Step 5: write log
     if not config.dry_run:
@@ -93,6 +108,7 @@ def run_pipeline(
 # Auto-split
 # ------------------------------------------------------------------
 
+
 def _auto_split_if_needed(folder: Path) -> None:
     """If folder contains > _SPLIT_THRESHOLD direct files, split into subfolders."""
     flat_files = [p for p in folder.iterdir() if p.is_file()]
@@ -108,12 +124,15 @@ def _auto_split_if_needed(folder: Path) -> None:
         dest_dir = folder_names[i % n_folders]
         shutil.move(str(file), dest_dir / file.name)
 
-    logger.info(f"Auto-split {len(flat_files)} files into {n_folders} subfolders in {folder.name}")
+    logger.info(
+        f"Auto-split {len(flat_files)} files into {n_folders} subfolders in {folder.name}"
+    )
 
 
 # ------------------------------------------------------------------
 # File collection
 # ------------------------------------------------------------------
+
 
 def _collect_files(folder: Path) -> list[Path]:
     """Collect all files recursively, excluding hidden files and system files."""
@@ -128,8 +147,9 @@ def _collect_files(folder: Path) -> list[Path]:
 # Helpers
 # ------------------------------------------------------------------
 
+
 def _chunk(lst: list, size: int) -> list[list]:
-    return [lst[i: i + size] for i in range(0, len(lst), size)]
+    return [lst[i : i + size] for i in range(0, len(lst), size)]
 
 
 def _write_log(config: Config, stats: dict) -> None:

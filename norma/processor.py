@@ -3,11 +3,16 @@ import shutil
 import logging
 import threading
 from pathlib import Path
+from typing import Callable, Optional
 
 from openai import OpenAI
 
 from .config import Config
 from .prompt import build_system_prompt, get_format_literals
+
+FileResult = tuple[
+    Path, str | None, bool, str | None
+]  # (original, llm_suggestion, success, final_name)
 
 logger = logging.getLogger("norma")
 
@@ -33,30 +38,37 @@ class FileProcessor:
     # Public API
     # ------------------------------------------------------------------
 
-    def process_and_apply_batch(self, files: list[Path]) -> list[tuple[Path, str | None, bool]]:
+    def process_and_apply_batch(
+        self,
+        files: list[Path],
+        result_callback: Callable[[list[FileResult]], None] | None = None,
+    ) -> list[FileResult]:
         """
         Process a batch of files end-to-end:
           1. Ask LLM for new names
           2. Apply renames (copy to output folder) unless dry_run
+          3. Fire result_callback with per-file results (one call per batch)
 
-        Returns a list of (original_path, new_name, success) tuples.
+        Returns a list of (original_path, llm_suggestion, success, final_name) tuples.
         """
         if not files:
             return []
 
         name_map = self._get_names_for_batch(files)
-        results = []
+        results: list[FileResult] = []
 
         for original in files:
             new_stem = name_map.get(original)
             if new_stem is None:
                 self._increment("errors")
                 self._increment("total")
-                results.append((original, None, False))
-                continue
+                results.append((original, None, False, None))
+            else:
+                success, final_name = self._apply_rename(original, new_stem)
+                results.append((original, new_stem, success, final_name))
 
-            success, final_name = self._apply_rename(original, new_stem)
-            results.append((original, final_name, success))
+        if result_callback:
+            result_callback(results)
 
         return results
 
@@ -85,9 +97,13 @@ class FileProcessor:
             if parsed is not None:
                 return {files[i]: parsed[i] for i in range(len(files))}
 
-            logger.warning(f"Batch count mismatch — falling back to individual calls for {len(files)} files")
+            logger.warning(
+                f"Batch count mismatch — falling back to individual calls for {len(files)} files"
+            )
         except Exception as e:
-            logger.error(f"Batch LLM call failed: {e} — falling back to individual calls")
+            logger.error(
+                f"Batch LLM call failed: {e} — falling back to individual calls"
+            )
 
         return self._get_names_individually(files)
 
@@ -105,7 +121,7 @@ class FileProcessor:
                     max_tokens=64,  # single file → short output
                 )
                 name = response.choices[0].message.content.strip()
-                name = re.sub(r'^\d+\.\s*', '', name).strip()
+                name = re.sub(r"^\d+\.\s*", "", name).strip()
                 results[f] = name
             except Exception as e:
                 logger.error(f"Individual LLM call failed for {f.name}: {e}")
@@ -185,25 +201,30 @@ class FileProcessor:
     def _increment(self, counter: str) -> None:
         with self._lock:
             match counter:
-                case "total":   self.count_total += 1
-                case "renamed": self.count_renamed += 1
-                case "errors":  self.count_errors += 1
-                case "empty":   self.count_empty += 1
+                case "total":
+                    self.count_total += 1
+                case "renamed":
+                    self.count_renamed += 1
+                case "errors":
+                    self.count_errors += 1
+                case "empty":
+                    self.count_empty += 1
 
     @property
     def stats(self) -> dict:
         with self._lock:
             return {
-                "total":   self.count_total,
+                "total": self.count_total,
                 "renamed": self.count_renamed,
-                "errors":  self.count_errors,
-                "empty":   self.count_empty,
+                "errors": self.count_errors,
+                "empty": self.count_empty,
             }
 
 
 # ------------------------------------------------------------------
 # Module-level helpers
 # ------------------------------------------------------------------
+
 
 def _parse_numbered_response(raw: str, expected: int) -> list[str] | None:
     """Parse '1. Name\n2. Name\n...' — returns None if count doesn't match expected."""
@@ -212,7 +233,7 @@ def _parse_numbered_response(raw: str, expected: int) -> list[str] | None:
         line = line.strip()
         if not line:
             continue
-        m = re.match(r'^\d+\.\s*(.+)$', line)
+        m = re.match(r"^\d+\.\s*(.+)$", line)
         if m:
             results.append(m.group(1).strip())
 
@@ -223,8 +244,7 @@ def _parse_numbered_response(raw: str, expected: int) -> list[str] | None:
 
 def _clean_stem(stem: str) -> str:
     return (
-        stem
-        .replace("\n", " ")
+        stem.replace("\n", " ")
         .replace("\\", "")
         .replace("{", "")
         .replace("}", "")

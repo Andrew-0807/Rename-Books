@@ -11,7 +11,7 @@
   <a href="https://www.python.org/downloads/"><img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white"/></a>
   <a href="https://ollama.com"><img alt="Ollama" src="https://img.shields.io/badge/backend-Ollama%20%7C%20LM%20Studio-black?style=flat-square"/></a>
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-green?style=flat-square"/>
-  <a href="LICENCE"><img alt="License" src="https://img.shields.io/badge/license-Unlicense-orange?style=flat-square"/></a>
+  <a href="LICENCE"><img alt="License" src="https://img.shields.io/badge/license-MIT-orange?style=flat-square"/></a>
 </p>
 
 <img src="docs/screenshot-dryrun.svg" alt="norma dry-run preview" width="800"/>
@@ -52,6 +52,7 @@ The format is entirely up to you. norma adapts to any `{Field}` template you giv
 - **Two backends** — works with [Ollama](https://ollama.com) or [LM Studio](https://lmstudio.ai)
 - **Collision-safe** — duplicate output names get `(2)`, `(3)` suffixes automatically
 - **Large libraries** — auto-splits folders >3000 files into named subfolders before processing
+- **TUI mode** — real-time visualization of all transformations as they happen; catch mistakes, select bad ones, edit inline
 
 ---
 
@@ -99,6 +100,30 @@ norma run ./my-ebooks --format "{Author} - {Title}"
 ```
 
 <img src="docs/screenshot-run.svg" alt="run summary" width="600"/>
+
+### Live TUI — watch transformations happen
+
+```bash
+norma tui ./my-ebooks --format "{Author} - {Title}"
+```
+
+The TUI gives you a real-time view of every transformation as it completes:
+
+- **Log feed** (top) — newest entries first, like a live log
+- **File table** (middle) — virtual-scrolled, loads gradually as you scroll down; handles 100k+ files smoothly
+- **Edit inline** — press `e` on any row to open a correction modal pre-filled with the LLM suggestion
+- **Retry** — press `r` on a selected row or `a` to retry all errors
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ ! harry_potter_jk_rowling.epub -> J.K. Rowling - Harry Potter   │
+│ ! 4.LISA_KLEYPAS_Scandal_in_primavara.pdf -> ...                │
+│ [green]V 142[/green]  [red]X 3[/red]  145 total   {Author} -   │
+│ [b]r[/b]etry  [b]e[/b]dit  [b]q[/b]uit                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+Keys: `↑↓` navigate | `Enter`/`e` edit | `r` retry selected | `a` retry all | `g` top | `G` bottom | `q` quit
 
 ### Check backend connectivity
 
